@@ -7,17 +7,8 @@ pipeline{
                     url : 'https://github.com/prachimagadum06-ops/My_Portfolio2.git'
                 }
             }
-            stage('Build docker image'){
-                steps{
-                    bat 'docker build -t portfolio:latest.'
-                }
-                
-            }
-            stage('List'){
-                steps{
-                    bat 'docker images'
-                }
-            }
+            
+            
             stage('build'){
                 steps{
                     echo 'Portfolio Build Started...'
@@ -30,7 +21,17 @@ pipeline{
                 }
                 
             }
+            stage('Build docker image'){
+                steps{
+                    bat 'docker build -t portfolio:latest.'
+                }
+                
+            }
+            stage('List'){
+                steps{
+                    bat 'docker images'
+                }
+            }
             
-        
-    }
-}
+        }
+        }

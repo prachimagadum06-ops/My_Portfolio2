@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevOps Portfolio | Modern SaaS Style</title>
+    <meta name="description" content="Modern DevOps portfolio with glassmorphism, animated sections, and local-storage interactions." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <div class="bg-orb orb-3"></div>
+    <div class="particles" aria-hidden="true"></div>
+
+    <header class="navbar">
+      <a href="#home" class="logo">DevOps<span>folio</span></a>
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+    </header>
+
+    <main id="home">
+      <section class="hero section reveal">
+        <div class="hero-content">
+          <div class="badge">BCA Student • Aspiring DevOps Engineer</div>
+          <h1>Hi, I’m <span class="gradient-text">Prachi M</span></h1>
+          <div class="typing-box">
+            <span class="typing-label">I build </span>
+            <span id="typing-text"></span>
+            <span class="cursor">|</span>
+          </div>
+          <p>
+            I’m passionate about automation, cloud infrastructure, CI/CD pipelines, and building reliable systems that scale with confidence.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn primary">View Projects</a>
+            <a href="assets/resume.pdf" class="btn secondary" id="download-resume-btn" download>Download Resume</a>
+            <a href="#contact" class="btn ghost">Contact Me</a>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+             </div>
+        </div>
+        <div class="hero-visual">
+          <div class="profile-card glass">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80" alt="Professional portrait" />
+            <div class="profile-badge">Open to Opportunities</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section reveal">
+        <div class="section-heading">
+          <p class="eyebrow">About Me</p>
+          <h2>Crafting modern infrastructure with a human-centered approach.</h2>
+        </div>
+        <div class="about-grid">
+          <div class="glass about-card">
+            <h3>Professional Introduction</h3>
+            <p>
+              I am a college student exploring DevOps and cloud engineering by building automation-first projects using Docker, Jenkins, GitHub Actions, and AWS.
+              My goal is to become a strong platform engineer who bridges development and operations with elegant, scalable systems.
+            </p>
+            <ul class="about-list">
+              <li><strong>Education:</strong> BCA Student</li>
+              <li><strong>Skills:</strong> Python, Bash, YAML, Docker, Jenkins,AWS</li>
+              <li><strong>Career Goal:</strong> Build career in DevOps and Cloud Engineering</li>
+            </ul>
+          </div>
+          <div class="stats-grid">
+            <div class="stat-card glass">
+              <div class="counter" data-target="3">3</div>
+              <span>Projects Completed</span>
+            </div>
+            <div class="stat-card glass">
+              <div class="counter" data-target="5">5</div>
+              <span>Technologies Learned</span>
+            </div>
+            <div class="stat-card glass">
+              <div class="counter" data-target="6">6</div>
+              <span>GitHub Repositories</span>
+            </div>
+            <div class="stat-card glass">
+              <div class="counter" data-target="2">2</div>
+              <span>Certifications</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section reveal">
+        <div class="section-heading">
+          <p class="eyebrow">Skills</p>
+          <h2>Tools and technologies I’m building with every day.</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-group glass">
+            <h3><i class="fa-solid fa-code"></i> Programming</h3>
+            <div class="skill-card">
+              <div class="skill-meta"><span>Python</span><span>90%</span></div>
+              <div class="progress"><span style="width: 90%"></span></div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-meta"><span>Git Bash</span><span>82%</span></div>
+              <div class="progress"><span style="width: 82%"></span></div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-meta"><span>YAML</span><span>60%</span></div>
+              <div class="progress"><span style="width: 60%"></span></div>
+            </div>
+          </div>
+          <div class="skill-group glass">
+            <h3><i class="fa-solid fa-box-open"></i> DevOps</h3>
+            <div class="skill-card">
+              <div class="skill-meta"><span>Docker</span><span>78%</span></div>
+              <div class="progress"><span style="width: 78%"></span></div>
+            </div>
+            
+            <div class="skill-card">
+              <div class="skill-meta"><span>Jenkins</span><span>80%</span></div>
+              <div class="progress"><span style="width: 80%"></span></div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-meta"><span>Git/GitHub</span><span>90%</span></div>
+              <div class="progress"><span style="width: 90%"></span></div>
+            </div>
+          </div>
+          <div class="skill-group glass">
+            <h3><i class="fa-solid fa-cloud"></i> Cloud</h3>
+            <div class="skill-card">
+              <div class="skill-meta"><span>AWS EC2</span><span>78%</span></div>
+              <div class="progress"><span style="width: 78%"></span></div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-meta"><span>S3</span><span>77%</span></div>
+              <div class="progress"><span style="width: 77%"></span></div>
+            </div>
+            
+            
+          </div>
+          <div class="skill-group glass">
+            <h3><i class="fa-solid fa-toolbox"></i> Tools</h3>
+            <div class="skill-card">
+              <div class="skill-meta"><span>VS Code</span><span>92%</span></div>
+              <div class="progress"><span style="width: 92%"></span></div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-meta"><span>Linux</span><span>75%</span></div>
+              <div class="progress"><span style="width: 75%"></span></div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-meta"><span>Postman</span><span>80%</span></div>
+              <div class="progress"><span style="width: 80%"></span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section reveal">
+  <div class="section-heading">
+    <p class="eyebrow">Projects</p>
+    <h2>Selected work that reflects my development journey.</h2>
+  </div>
+
+  <div class="projects-grid">
+
+    <!-- Job Portal -->
+    <article class="project-card glass">
+      <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80"
+        alt="Job Portal" />
+
+      <div class="project-body">
+        <div class="project-top">
+          <h3>Job Portal</h3>
+          <div class="project-top-actions">
+            <span class="status">Live</span>
+          </div>
+        </div>
+
+        <p>
+          A modern responsive Job Portal where users can browse and apply for
+          jobs. Built using HTML, CSS, JavaScript and deployed on Render.
+        </p>
+
+        <div class="tech-tags">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+        </div>
+
+        <div class="project-actions">
+          <a href="https://job-portal-20f5.onrender.com/"
+             target="_blank"
+             class="btn tiny secondary">
+             Live Demo
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- E-Commerce Website -->
+    <article class="project-card glass">
+      <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=900&q=80"
+        alt="E-Commerce Website" />
+
+      <div class="project-body">
+        <div class="project-top">
+          <h3>E-Commerce Website</h3>
+          <div class="project-top-actions">
+            <span class="status">Live</span>
+          </div>
+        </div>
+
+        <p>
+          A responsive E-Commerce website featuring product listings, shopping
+          cart functionality and a modern user interface. Deployed on Render.
+        </p>
+
+        <div class="tech-tags">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+        </div>
+
+        <div class="project-actions">
+          <a href="https://e-commerce-web-p06l.onrender.com/"
+             target="_blank"
+             class="btn tiny secondary">
+             Live Demo
+          </a>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+      <section class="section reveal">
+        <div class="section-heading">
+          <p class="eyebrow">GitHub</p>
+          <h2>Profile snapshot, repositories, and contribution rhythm.</h2>
+        </div>
+        <div class="github-card glass">
+          <div class="github-profile">
+            <img src="https://avatars.githubusercontent.com/u/9919?v=4" alt="GitHub avatar" />
+            <div>
+              <h3>@devopslearner</h3>
+              <p>Cloud • Automation • Learning in public</p>
+            </div>
+          </div>
+          
+          <div class="github-contribution">
+    <img
+        src="https://ghchart.rshah.org/prachimagadum06-ops"
+        alt="GitHub Contribution Graph"
+        style="width:100%; border-radius:12px;">
+
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <div class="repo-list">
+            <div class="repo-item"><strong>devops-automation-kit</strong><span>Docker + Jenkins + Bash</span></div>
+            <div class="repo-item"><strong>aws-learning-lab</strong><span>EC2 + IAM + S3</span></div>
+            <div class="repo-item"><strong>k8s-notes</strong><span>Manifest examples</span></div>
+          </div>
+          <a href="https://github.com/prachimagadum06-ops" class="btn primary" target="_blank" rel="noreferrer">Visit GitHub</a>
+        </div>
+      </section>
+
+      <section id="resume" class="section reveal">
+        <div class="section-heading">
+          <p class="eyebrow">Resume</p>
+          <h2>A polished summary of experience, education, and goals.</h2>
+        </div>
+        <div class="resume-card glass">
+          <h3>Download my resume and explore my journey.</h3>
+          <p>Built for recruiters and hiring teams looking for a DevOps-focused, self-driven learner.</p>
+          <div class="resume-actions">
+            <a href="assets/resume.pdf" class="btn primary" download>Download Resume</a>
+            <a href="assets/resume.pdf" class="btn secondary" target="_blank">View Resume</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="timeline" class="section reveal">
+        <div class="section-heading">
+          <p class="eyebrow">Learning Journey</p>
+          <h2>My path from fundamentals to DevOps practice.</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item"><span>Started Programming</span></div>
+          <div class="timeline-item"><span>Learned Python</span></div>
+          <div class="timeline-item"><span>Git & GitHub</span></div>
+          <div class="timeline-item"><span>Docker</span></div>
+          <div class="timeline-item"><span>Jenkins</span></div>
+          <div class="timeline-item"><span>AWS</span></div>
+          <div class="timeline-item"><span>DevOps Projects</span></div>
+        </div>
+      </section>
+
+      <section id="certificates" class="section reveal">
+        <div class="section-heading">
+          <p class="eyebrow">Certificates</p>
+          <h2>Learning milestones and achievements I’m proud of.</h2>
+        </div>
+        <div class="certs-grid">
+          <div class="certificate-card glass"><img src="Be10x.jpeg" alt="Certificate 1" /></div>
+          <div class="certificate-card glass"><img src="Reference Letter.jpeg" alt="Certificate 2" /></div>
+          <div class="certificate-card glass"><img src="CompletionCirtificate.jpeg" alt="Certificate 3" /></div>
+        </div>
+      </section>
+
+      <section id="contact" class="section reveal">
+        <div class="section-heading">
+          <p class="eyebrow">Contact</p>
+          <h2>Let’s connect and build something meaningful.</h2>
+        </div>
+        <div class="contact-wrapper">
+          <form id="contact-form" class="glass contact-form">
+            <label>
+              Name
+              <input type="text" name="name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" required />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="5" required></textarea>
+            </label>
+            <button type="submit" class="btn primary">Send Message</button>
+          </form>
+          <div class="contact-info glass">
+            <h3>Reach me</h3>
+            <p><i class="fa-solid fa-envelope"></i>magadumuday123@gmail.com</p>
+            <p><i class="fa-brands fa-github"></i> github.com</p>
+            <p><i class="fa-brands fa-linkedin"></i> linkedin.com/in/devopslearner</p>
+            <div class="visitor-pill">👁 Visitors: <span id="visitor-count">0</span></div>
+            
+            <p id="last-visit" class="last-visit">Last visit: --</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <button class="chat-toggle" id="chat-toggle" aria-label="Open chat">
+      <i class="fa-solid fa-comment-dots"></i>
+    </button>
+
+    <div class="chat-popup glass" id="chat-popup">
+      <div class="chat-header">
+        <h3>Say hello</h3>
+        <button id="close-chat"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="chat-body" id="chat-body"></div>
+      <form id="chat-form" class="chat-form">
+        <input type="text" id="chat-input" placeholder="Leave a message" required />
+        <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+      </form>
+    </div>
+
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <div class="modal" id="image-modal" aria-hidden="true">
+      <img src="" alt="Certificate preview" id="modal-image" />
+      <button id="close-modal"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-links">
+        <a href="https://github.com/prachimagadum06-ops?tab=repositories" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/prachi-magadumm-99709b3a9" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+   
+      </div>
+      <p>© 2026 DevOps Portfolio. Crafted with care.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

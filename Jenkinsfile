@@ -1,36 +1,31 @@
-pipeline {
+pipeline{
     agent any
-
-    stages {
-
-        stage('Clone') {
-            steps {
-                git branch: 'main',
-                    url: 'https://github.com/prachimagadum06-ops/My_Portfolio2.git'
+    stages{
+        stage('clone'){
+            steps{
+                git branch:'main',
+                url:"https://github.com/laxmipsavadati-code/Portfolio-with-devops"
             }
         }
-
-        stage('Build') {
-            steps {
-                echo 'Portfolio Build Started...'
+        stage('build'){
+            steps{
+                echo 'Portfolio build'
             }
         }
-
-        stage('Build Docker Image') {
+        stage('Deploye'){
+            steps{
+                echo 'portfolio deployed seccessfully!'
+            }
+        }
+           stage('Build Docker Image') {
             steps {
                 bat 'docker build -t portfolio:latest .'
             }
         }
 
-        stage('List Images') {
+        stage('List Docker Images') {
             steps {
                 bat 'docker images'
-            }
-        }
-
-        stage('Deploy') {
-            steps {
-                echo 'Portfolio deployed successfully!!'
             }
         }
     }

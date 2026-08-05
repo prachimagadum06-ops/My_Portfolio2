@@ -4,7 +4,7 @@ pipeline{
         stage('clone'){
             steps{
                 git branch:'main',
-                url:"https://github.com/laxmipsavadati-code/Portfolio-with-devops"
+                url:"https://github.com/prachimagadum06-ops/My_Portfolio2.git"
             }
         }
         stage('build'){
